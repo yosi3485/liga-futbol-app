@@ -5,6 +5,15 @@ export default defineNuxtConfig({
 
   css: ['./app/assets/css/main.css'],
 
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'manifest', href: '/site.webmanifest' }
+      ]
+    }
+  },
+
   vite: {
     plugins: [tailwindcss()]
   },
